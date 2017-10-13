@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{24E6362A-E0DB-4976-A05A-7AAAFF5949DB}</ProjectGuid>
+    <ProjectGuid>{326A3832-A5C4-4D2A-B852-097FDDB23078}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>xConnectIntro.ConsoleApp</RootNamespace>
-    <AssemblyName>xConnectIntro.ConsoleApp</AssemblyName>
+    <RootNamespace>xConnectIntro.ModelBuilderApp</RootNamespace>
+    <AssemblyName>xConnectIntro.ModelBuilderApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -87,6 +87,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\xConnectIntro.Model\xConnectIntro.Model.csproj">
+      <Project>{c42de878-49bc-4687-bb73-15c109e1a694}</Project>
+      <Name>xConnectIntro.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
